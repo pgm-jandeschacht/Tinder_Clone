@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tinder | Programming 2: Front-End Advanced | Associate Degree in Computer Programming</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./static/css/main.css" crossorigin="anonymous" />
+    <link rel="icon" type="image/png" sizes="32x32" href="static/img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="static/img/favicon-16x16.png">
+</head>
+
+    <header>
+        <section class="header">
+            <div class="logo">
+                <img src="static/img/tinder-logo.svg" alt="Logo Tinder">
+            </div>
+        </section>
+    </header>
+
+    <main>
+        <section class="main">
+            <section class="users is20 container__big">
+                <div class="title no-margin">
+                    <h2>Users</h2>
+                </div>
+
+                <div class="container__list__big">
+                    <ul class="users__list"></ul>
+                </div>
+            </section>
+
+            <section class="messages is20 container__big">
+                <div class="title no-margin">
+                    <h2>Messages</h2>
+                </div>
+                <div class="container__small__flex">
+                    <div class="inbox container__small">
+                        <div class="sub__title inbox">
+                            <h3>Inbox</h3>
+                            <div class="amount">
+
+                            </div>
+                        </div>
+    
+                        <div class="container__list__small">
+                            <ul class="messages__in"></ul>
+                        </div>
+                    </div>
+                    
+                    <div class="outbox container__small">
+                        <div class="sub__title outbox">
+                            <h3>Outbox</h3>
+                            <div class="amount">
+
+                            </div>
+                        </div>
+    
+                        <div class="container__list__small">
+                            <ul class="messages__out"></ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="conversation is40 container__big">
+                <div class="title no-margin">
+                    <h2>Conversations</h2>
+                </div>
+
+                <div class="conversation__header__flex">
+                    <div class="conversation__user">
+
+                    </div>
+
+                    <div class="conversation__icons">
+                        <div class="conversation__icon">
+                            <a href="#"> 
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+                                    <path id="ic_call_24px" d="M6.62,10.79a15.149,15.149,0,0,0,6.59,6.59l2.2-2.2a.994.994,0,0,1,1.02-.24,11.407,11.407,0,0,0,3.57.57,1,1,0,0,1,1,1V20a1,1,0,0,1-1,1A17,17,0,0,1,3,4,1,1,0,0,1,4,3H7.5a1,1,0,0,1,1,1,11.36,11.36,0,0,0,.57,3.57,1,1,0,0,1-.25,1.02Z" transform="translate(-3 -3)"/>
+                                </svg>
+                            </a>
+                        </div>
+
+                        <div class="conversation__icon">
+                            <a href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="12" viewBox="0 0 18 12">
+                                    <path id="ic_videocam_24px" d="M17,10.5V7a1,1,0,0,0-1-1H4A1,1,0,0,0,3,7V17a1,1,0,0,0,1,1H16a1,1,0,0,0,1-1V13.5l4,4V6.5Z" transform="translate(-3 -6)"/>
+                                </svg>
+                            </a>
+                        </div>
+
+                        <div class="conversation__icon">
+                            <a href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+                                    <path id="ic_info_24px" d="M12,2A10,10,0,1,0,22,12,10,10,0,0,0,12,2Zm1,15H11V11h2Zm0-8H11V7h2Z" transform="translate(-2 -2)"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="new__message__flex">
+                    <div class="container__list__medium">
+                        <ul class="conversations__list"></ul>
+                    </div>
+
+                    <div class="form">
+                        <form id="create__message" method="post">
+                            <label for="text__message">Type your message</label>
+                            <textarea rows="1" id="text__message" type="text" name="text__message" placeholder="Type your message" required></textarea>
+    
+                            <button>
+                                Send
+                                <img src="static/img/send.svg">
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+                
+            <section class="matches is20 container__big">
+                <div class="title no-margin">
+                    <h2>Matches</h2>
+                </div>
+
+                <div class="container__small__flex">
+                    <div class="inbox container__small">
+                        <div class="sub__title no-matches">
+                            <h3>No match</h3>
+                        </div>
+    
+                        <div class="container__list__small">
+                            <ul class="no-matches__list"></ul>
+                        </div>
+                    </div>
+                    
+                    <div class="outbox container__small">
+                        <div class="sub__title matches">
+                            <h3>Match</h3>
+                            <div class="amount">
+
+                            </div>
+                        </div>
+    
+                        <div class="container__list__small">
+                            <ul class="matches__list"></ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+    </main>
+
+<body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js" integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ==" crossorigin="anonymous"></script>
+    <script src="./static/js/services.js"></script>
+    <script src="./static/js/main.js"></script>
+</body>
+</html>
