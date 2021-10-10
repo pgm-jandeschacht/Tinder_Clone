@@ -1,9 +1,5 @@
-# Final Project pgm-2: TinderClone
-Final Project PGM-2 2020-21 | Associate Degree in Computer Programming | Artevelde University of Applied Sciences
+# TinderClone
 
-|           |                                  |
-| --------- | -------------------------------- |
-| Firstname | Jan                              |
-| Lastname  | Deschacht                        |
-| Gender    | :male_sign:                      |
-| Email     | jandesch@student.arteveldehs.be |
+This project is a clone of Tinder. It was the first time having a back end in a project. This was an assignment for Artevelde.
+
+**Technologies used:** Express, Faker, Uuid, Nodemon, Cors, DotEnd, Eslint, Nunjucks, Javascript, CSS and HTML
